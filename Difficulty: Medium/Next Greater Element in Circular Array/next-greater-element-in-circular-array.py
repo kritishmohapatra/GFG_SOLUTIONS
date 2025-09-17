@@ -1,6 +1,7 @@
 class Solution:
-    def nextLargerElement(self, arr):
+    def nextGreater(self, arr):
         # code here
+         # code here
         ans=[]
         stack=[]
         n=len(arr)
