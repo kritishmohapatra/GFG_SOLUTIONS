@@ -1,15 +1,12 @@
-#User function Template for python3
-
 '''
 class Node:
     def __init__(self, val):
-        self.right = None
         self.data = val
         self.left = None
+        self.right = None
 '''
 
 class Solution:
-    # Return the kth smallest element in the given BST 
     def inorder(self,root,c,k,ks):
         if not root or c[0]>=k:
             return
