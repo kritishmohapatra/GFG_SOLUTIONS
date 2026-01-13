@@ -1,6 +1,6 @@
 class Solution:
     def catchThieves(self, arr, k):
-        #code  here
+        #code here
         p=0
         t=0
         while (p<len(arr) and arr[p]!="P"):
@@ -22,5 +22,5 @@ class Solution:
             while (t<len(arr) and arr[t]!="T"):
                 t+=1
         return c
-            
+        
 
