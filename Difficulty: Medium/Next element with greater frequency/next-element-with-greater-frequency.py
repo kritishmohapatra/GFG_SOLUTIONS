@@ -1,6 +1,7 @@
 from collections import Counter
+
 class Solution:
-    def findGreater(self, arr):
+    def nextFreqGreater(self, arr):
         # code here
         c=Counter(arr)
         n=len(arr)
