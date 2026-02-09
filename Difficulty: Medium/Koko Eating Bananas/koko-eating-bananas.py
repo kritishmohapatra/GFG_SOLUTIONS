@@ -1,7 +1,5 @@
-#User function Template for python3
-
 class Solution:
-    def kokoEat(self,arr,k):
+    def kokoEat(self, arr, k):
         # Code here
         def calci(arr, k):
             total=0
