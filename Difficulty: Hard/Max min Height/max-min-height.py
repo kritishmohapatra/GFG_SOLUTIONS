@@ -1,5 +1,6 @@
-class Solution:
+class Solution():
     def maxMinHeight(self, arr, k, w):
+        # code here
         def is_possible(target):
             n = len(arr)
             added = [0] * n
@@ -29,4 +30,3 @@ class Solution:
                 high = mid - 1
         return result
         # code here
-        
