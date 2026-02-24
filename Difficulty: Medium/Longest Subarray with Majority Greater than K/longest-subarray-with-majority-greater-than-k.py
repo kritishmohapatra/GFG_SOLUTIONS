@@ -1,21 +1,17 @@
-
-#User function Template for python3
 class Solution:
     def longestSubarray(self, arr, k):
         # Code Here
-        mp={0:-1}
-        pf=0
-        maxi=0
+        ssum = ans = 0
+        d = dict()
+        
+        
         for i in range(len(arr)):
-            if arr[i]>k:
-                pf+=1
-            else:
-                pf-=1
-            if pf>0:
-                maxi=i+1
-            if pf-1 in mp:
-                maxi=max(maxi, i-mp[pf-1])
-            if pf not in mp:
-                mp[pf]=i
-        return maxi
-
+            ssum += (1 if arr[i] > k else -1)
+            if ssum > 0:
+                ans = i + 1
+            elif ssum - 1 in d:
+                ans = max(ans, i - d[ssum - 1])
+            
+            d[ssum] = d.get(ssum, i)
+            
+        return ans
