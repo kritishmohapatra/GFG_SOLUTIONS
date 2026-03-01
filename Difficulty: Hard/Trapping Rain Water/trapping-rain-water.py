@@ -1,4 +1,3 @@
-
 class Solution:
     def maxWater(self, arr):
         # code here
