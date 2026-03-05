@@ -1,6 +1,7 @@
 class Solution:
     def longestKSubstr(self, s, k):
         # code here
+        
         n = len(s)
         i = 0
         j = 0
@@ -38,5 +39,3 @@ class Solution:
             j += 1
     
         return maxi
-        
-        
