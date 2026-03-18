@@ -1,11 +1,6 @@
-
 class Solution:
-    
-
-    
     def largestBst(self, root):
         # Your code here
-        
         def helper(node):
             if not node:
                 return 0, float('inf'), float('-inf'), 0  # size, min, max, largest BST size
@@ -20,4 +15,3 @@ class Solution:
                 return 1 + l_size + r_size, float('-inf'), float('inf'), max(l_bst, r_bst)
         
         return helper(root)[3]
-        
