@@ -1,5 +1,8 @@
 class Solution:
     def removeSpaces(self, s):
         # code here
-        return "".join(s.split())
-        
+        st=""
+        for i in s:
+            if i!=" ":
+                st+=i 
+        return st
