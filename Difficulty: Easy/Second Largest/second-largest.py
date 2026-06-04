@@ -1,12 +1,12 @@
 class Solution:
-    def getSecondLargest(self, a):
+    def getSecondLargest(self, arr):
         # Code Here
         sl=-1
-        l=a[0]
-        for i in range(1, len(a)):
-            if a[i]>l:
+        l=arr[0]
+        for i in range(1, len(arr)):
+            if arr[i]>l:
                 sl=l
-                l=a[i]
-            elif a[i]<l and a[i]>sl:
-                sl=a[i]
+                l=arr[i]
+            elif arr[i]<l and arr[i]>sl:
+                sl=arr[i]
         return sl
