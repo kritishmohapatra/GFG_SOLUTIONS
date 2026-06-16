@@ -2,8 +2,10 @@
 class Solution:
 	def removeVowels(self, s):
 		# code here
-		ans=""
+		a=""
 		for i in s:
 		    if i not in "aeiou":
-		        ans+=i
-		return ans
+		        a+=i
+		return a
+		
+		
